@@ -3,7 +3,7 @@ xml2rfc=xml2rfc
 
 all: happy-stubs.html happy-stubs.txt
 
-happy-stubs.xml: happy-stubs.md
+happy-stubs.xml: algorithm.md considerations.md happy-stubs.md problem.md requirements.md security.md
 	$(mmark) -page -xml2 happy-stubs.md > happy-stubs.xml
 
 happy-stubs.html: happy-stubs.xml
