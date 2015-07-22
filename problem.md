@@ -1,11 +1,11 @@
 
 A stub resolver may have multiple iterative server addresses to choose from,
-but this information alone is insufficient to make a choice which will result
-in good performance for the application which initiated a query.  The first
-host selected may be unreachable for any number of reasons, including being
-offline, or being on the opposite side of a black hole affecting its address
-family.  The stub resolver cannot know before issuing a query to such a server
-that the query will time out.
+but this information alone is insufficient to make a name server selection
+which will result in good performance for the application which initiated a
+query.  The first host selected may be unreachable for any number of reasons,
+including being offline, or being on the opposite side of a black hole
+affecting its address family.  The stub resolver cannot know before issuing a
+query to such a server that the query will time out.
 
 Simply providing a stub resolver with a list of iterative servers to be
 queried in sequence is insufficient for the stub resolver to reliably provide

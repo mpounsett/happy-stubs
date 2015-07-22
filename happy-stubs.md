@@ -43,7 +43,8 @@ resolvers until either an answer is received, or until all listed iterative
 resolvers have timed out.  If the first listed server is slow to respond, or
 times out completely, it is enough to create a poor user experience for any
 end-user application relying on a response.  Often the first time out is
-enough to cause the querying application to time out itself.
+enough to cause the querying application to time out itself, rendering
+queries sent to subsequent resolvers useless.
 
 This problem is compounded when multiple iterative resolvers are listed for
 both IPv4 and IPv6.  A black hole or other service problem affecting only one
@@ -53,12 +54,11 @@ performing protocol happen to be listed first there could be quite a long
 delay before the servers on the better performing protocol are queried.
 
 A stub resolver can improve user experience by more aggressively querying
-multiple iterative servers, over both protocols when available.  There are a
-variety of algorithms which could be envisioned to improve user experience in
-this way.  This document specifies requirements for any such algorithm, with
-the goals that the network and servers not be inordinately harmed with a
-simple doubling of traffic on IPv6 and IPv4, and the client address preference
-be honoured (e.g., [@!RFC3484]).
+multiple iterative servers.   There are a variety of algorithms which could be
+envisioned to improve user experience in this way.  This document specifies
+requirements for any such algorithm, with the goals that the network and
+servers not be inordinately harmed with a simple doubling of traffic, and the
+client address preference be honoured ([@!RFC3484]).
 
 As the problems are similar in nature, this document borrows heavily from
 [@RFC6555], taking the recommendations of that document and applying them as
@@ -88,9 +88,9 @@ and "**OPTIONAL**" in this document are to be interpreted as described in
 ## Resolver Types
 
 Throughout this document, unless otherwise noted, any references to 'stub
-resolvers' are intended to include stub resolvers and any other non-iterative
-resolvers (both caching and non-caching) providing DNS service to one or more
-applications on the local host.
+resolvers' are intended to include any non-iterative resolver library or
+application (both caching and non-caching) providing DNS service to one or
+more applications on the local host.
 
 # Problem Statement
 {{problem.md}}
