@@ -95,6 +95,19 @@ more applications on the local host.
 # Problem Statement
 {{problem.md}}
 
+# Algorithm Requirements
+{{requirements.md}}
+
+# Additional Considerations
+{{considerations.md}}
+
+# Example Algorithm
+{{algorithm.md}}
+
+# Security Considerations
+{{security.md}}
+
+
 {backmatter}
 
 
