@@ -3,8 +3,8 @@
 % category = "std"
 % docName = "draft-pounsett-happy-stubs-00"
 % ipr = "trust200902"
-% area = "Operations"
-% workgroup = ""
+% area = "OPS"
+% workgroup = "DNS Operations Working Group"
 % keyword = ["stub resolver", "resolver", "happy eyeballs"]
 %
 % date = 2015-07-21T00:00:00Z
