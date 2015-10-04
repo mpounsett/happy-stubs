@@ -24,10 +24,10 @@
 DNS is the underpinning of nearly all protocols on the Internet.  When it is
 performing poorly it results in an undesirable user experience for every
 service which depends on it.  The typical algorithm used by stub resolvers and
-other non-iterative resolvers on end-user hosts can can result in long delays
-when the first queried iterative resolver is unreachable or unresponsive.
-This problem can be compounded when the non-iterative resolver is given a long
-list of iterative servers in order to cover both IPv4 and IPv6 services.
+other non-iterative resolvers can can result in long delays when the first
+queried iterative resolver is unreachable or unresponsive.  This problem can
+be compounded when the non-iterative resolver is given a long list of
+iterative servers in order to cover both IPv4 and IPv6 services.
 
 This document specifies requirements for resolver algorithms to reduce the
 likelihood of a poor user experience due to upstream DNS performance issues,
