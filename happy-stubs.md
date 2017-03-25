@@ -93,19 +93,14 @@ application (both caching and non-caching) providing DNS service to one or
 more applications on the local host.
 
 # Problem Statement
-{{problem.md}}
 
 # Algorithm Requirements
-{{requirements.md}}
 
 # Additional Considerations
-{{considerations.md}}
 
 # Example Algorithm
-{{algorithm.md}}
 
 # Security Considerations
-{{security.md}}
 
 
 {backmatter}
